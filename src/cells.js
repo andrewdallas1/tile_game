@@ -1,16 +1,28 @@
-class Cells {
+class Cell {
   constructor(value) {
     this.value = value;
 
   }
-    makeCell() {
-      for(let i = 0; i < this.value.length; i++){
-        document.getElementsByClassName('.row div').innerHTML = 'i';
-      }
+    makeCell(i) {
+
+      //console.log('trying to make cell');
+      //for(let i = 1; i < this.value; i++){
+        //let wrapper = document.querySelector('#wrapper');
+        //let wrapDivs = document.createElement('div');
+        let cellDiv = document.createElement('div');
+        //wrapDivs.setAttribute('class', 'wrapDiv');
+        cellDiv.setAttribute('class', 'cell');
+        cellDiv.setAttribute('id', i)
+
+        cellDiv.innerHTML = i;
+        console.log(cellDiv);
+        return cellDiv;
+        //wrapper.appendChild(wrapDivs);
+        //wrapDivs.appendChild(cellDiv);
+
     }
-}
+ }
 
+ // let newCell = new Cell(9);
 
-let newCells = new Cells(7);
-
-newCells.makeCell(7);
+ // newCell.makeCell();
