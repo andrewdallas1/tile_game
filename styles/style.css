@@ -11,6 +11,7 @@ h1 {
 }
 
 .cell {
+  position: relative;
   border: 1px solid black;
   box-sizing: border-box;
   display: inline-block;
@@ -22,13 +23,14 @@ h1 {
   background-color: #fff;
   text-align: center;
   font-size: 140px;
+  background-size: contain;
 }
 .wrapDiv {
   position: relative;
   margin: 1px;
   display: inline-block;
-  height: 162px;
+
   width: 162px;
-  border: 1px dotted white;
+
 }
 

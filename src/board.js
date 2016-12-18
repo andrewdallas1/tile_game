@@ -11,7 +11,7 @@ class Board {
       //cell.makeCell();
       let wrapper = document.querySelector('#wrapper');
       let wrapDivs = document.createElement('div');
-      wrapDivs.setAttribute('id', i)
+      wrapDivs.setAttribute('id', 'b' + i)
       wrapDivs.setAttribute('class', 'wrapDiv');
 
       wrapper.appendChild(wrapDivs);

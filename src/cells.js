@@ -9,10 +9,10 @@ class Cell {
       //for(let i = 1; i < this.value; i++){
         //let wrapper = document.querySelector('#wrapper');
         //let wrapDivs = document.createElement('div');
-        let cellDiv = document.createElement('div');
+        let cellDiv = document.createElement('button');
         //wrapDivs.setAttribute('class', 'wrapDiv');
         cellDiv.setAttribute('class', 'cell');
-        cellDiv.setAttribute('id', i)
+        cellDiv.setAttribute('id', 'c' + i)
 
         cellDiv.innerHTML = i;
         console.log(cellDiv);
