@@ -31,10 +31,6 @@ class Game {
             emptyDiv.appendChild(clickedNum);
             emptyDiv = clickedParent;
 
-          let parent0 = (document.getElementById('b0'));
-          let parent1 = (document.getElementById('b1'));
-          let parent2 = (document.getElementById('b2'));
-
           if((document.getElementById('c0').parentNode) === boardDivs[0] &&
              (document.getElementById('c1').parentNode) === boardDivs[1] &&
              (document.getElementById('c2').parentNode) === boardDivs[2] &&
@@ -43,7 +39,7 @@ class Game {
              (document.getElementById('c5').parentNode) === boardDivs[5] &&
              (document.getElementById('c6').parentNode) === boardDivs[6] &&
              (document.getElementById('c7').parentNode) === boardDivs[7]) {
-            alert('winner');
+            document.getElementById("winner").className = "active";
           }
       });
       };

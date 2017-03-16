@@ -29,8 +29,11 @@ h1 {
   position: relative;
   margin: 1px;
   display: inline-block;
-
   width: 162px;
-
 }
+
+.inactive {
+  display: none;
+}
+
 
